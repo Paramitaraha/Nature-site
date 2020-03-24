@@ -1,98 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap");
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap');
- 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body {
-    font-family: 'Roboto Condensed', sans-serif;
+nav {
+  font-family: "Roboto Condensed", sans-serif;
 }
-ul li a{
-    color: black;
-    text-decoration: none;
-    font-size: 2.5rem;
+ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 2.5rem;
 }
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 10vh;
-    padding: 2rem;
-    background: rgb(23, 175, 82);
-    font-size: 2rem;
-}
-
-ul li{
-    list-style: none;
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem;
+  background: rgb(23, 175, 82);
+  font-size: 2rem;
 }
 
-.hero{
-    min-height: 90vh;
-    background-image: url("/abandoned-forest-industry-nature-34950.jpg");
-    background-size: cover;
-    background-position: center;
-    color: yellow;
-    font-size: 2rem;
-    display: flex;
+ul li {
+  list-style: none;
+}
+
+.hero {
+  min-height: 90vh;
+  background-image: url("/abandoned-forest-industry-nature-34950.jpg");
+  background-size: cover;
+  background-position: center;
+  color: yellow;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h2 {
+  text-align: center;
+  margin: 2rem;
+}
+.hero button {
+  padding: 1rem 2rem;
+  background: rgb(190, 212, 146);
+  border: none;
+}
+.hero button:hover {
+  background-color: yellow;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+}
+.intro img {
+  width: 100%;
+}
+.intro-img {
+  flex: 1 1 30rem;
+  background-color: wheat;
+  padding: 2rem;
+}
+.intro-text {
+  flex: 1 1 30rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgb(245, 245, 184);
+  font-family: sans-serif;
+}
+.intro-text h2 {
+  font-size: 5rem;
+}
+.intro-text p {
+  font-size: 2rem;
+}
+
+@media(max-width: 500px) {
+  nav ul {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+    min-height: 5vh;
+  }
+  nav ul li a {
+    font-size: 2rem;
+  }
+  nav h1 {
+    font-size: 1rem;
+  }
 
-.hero h2{
-    text-align: center;
-    margin: 2rem;
-}
-.hero button{
-    padding: 1rem 2rem;
-    background: rgb(190, 212, 146);
-    border: none;
-}
-.hero button:hover{
-    background-color: yellow;
-}
-    
-.intro{
-    display: flex;
-    flex-wrap: wrap;
-}
-.intro img{
-    width: 100%;
-}
-.intro-img{
-    flex: 1 1 30rem;
-    background-color: wheat;
-    padding: 2rem;
-}
-.intro-text{
-    flex: 1 1 30rem;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    background-color: rgb(245, 245, 184);
-}
-.intro-text h2{
-    font-size: 5rem;
- 
-}
-.intro-text p{
-    font-size: 4rem;
-   
-}
-
-@media(max-width: 500px){
-    nav ul {
-        flex-direction: column;
-        min-height: 5vh;
-    }
-    nav h1 {
-        font-size: 3rem;
-    }
+  intro-text p {
+    font-size: .2rem;
+  }
+  
 }
